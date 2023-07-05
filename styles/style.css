@@ -1,6 +1,47 @@
+:root {
+    --primary-color: #75b2a7;
+    --footer-background-color: #f1f1ef;
+    --background-color: #fff;
+    --primary-font-size: 20px;
+    --footer-font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fb, header a img {
+    color: var(--primary-color);
+    height: 5%;
+    width: 5%;
+}
+
+
 header {
-    background-color: black;
+    background-color: var(--background-color);
     position: fixed;
-    top: 0;
     width: 100%;
 }
+
+
+
+footer {
+    background-color: var(--footer-background-color);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+address {
+    font-style: normal;
+}
+
+footer a {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--footer-font-size);
+}
+
+
